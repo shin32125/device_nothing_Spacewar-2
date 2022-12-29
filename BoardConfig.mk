@@ -59,10 +59,8 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
-SOONG_CONFIG_NAMESPACES += androidBluetoothVars
-SOONG_CONFIG_androidBluetoothVars += \
-    le_disable_read_buffer_size_and_set_host
-SOONG_CONFIG_androidBluetoothVars_le_disable_read_buffer_size_and_set_host ?= true
+TARGET_DISABLE_BLUETOOTH_LE_READ_BUFFER_SIZE_V2 := true
+TARGET_DISABLE_BLUETOOTH_LE_SET_HOST_FEATURE := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := Spacewar
