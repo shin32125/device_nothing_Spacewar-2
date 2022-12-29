@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Project-Xtended
+# Copyright (C) 2022 Evolution X
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -320,11 +320,13 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution
+
 PRODUCT_PACKAGES += \
-    XtendedFrameworks \
-    XtendedSettingsProvider \
-    XtendedSettings \
-    XtendedSystemUI
+    EvolutionFrameworksResSpacewar \
+    EvolutionSettingsProviderResSpacewar \
+    EvolutionSettingsResSpacewar \
+    EvolutionSystemUIResSpacewar
 
 # Overlay LAHAINA
 PRODUCT_PACKAGES += \
@@ -450,9 +452,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0 \
     android.hardware.thermal@2.0-service.qti
-
-# UDFPS animations
-EXTRA_UDFPS_ANIMATIONS := true
 
 # Update engine
 PRODUCT_PACKAGES += \

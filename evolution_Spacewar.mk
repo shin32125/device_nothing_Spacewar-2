@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Project-Xtended
+# Copyright (C) 2022 Evolution X
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,18 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/nothing/Spacewar/device.mk)
 
-# Inherit from Project-Xtended configuration.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
-# Bootanimation resolution.
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+EVO_BUILD_TYPE := UNOFFICIAL
+EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Nothing
 PRODUCT_DEVICE := Spacewar
 PRODUCT_MANUFACTURER := Nothing
 PRODUCT_MODEL := A063
-PRODUCT_NAME := xtended_Spacewar
+PRODUCT_NAME := evolution_Spacewar
 PRODUCT_SYSTEM_DEVICE := Spacewar
 PRODUCT_SYSTEM_NAME := Spacewar
 
@@ -35,7 +36,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
     
 BUILD_FINGERPRINT := Nothing/Spacewar/Spacewar:12/SKQ1.211230.001/1669043157:user/release-keys
-
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := mukesh22584
-WITH_GAPPS := true

@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2022 Project-Xtended
+# Copyright (C) 2022 Evolution X
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_Spacewar.mk
+    $(LOCAL_DIR)/evolution_Spacewar.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_Spacewar-eng \
-    xtended_Spacewar-user \
-    xtended_Spacewar-userdebug
+    evolution_Spacewar-eng \
+    evolution_Spacewar-user \
+    evolution_Spacewar-userdebug
