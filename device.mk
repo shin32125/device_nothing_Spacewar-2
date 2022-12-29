@@ -323,6 +323,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution
 
 PRODUCT_PACKAGES += \
+    PixelSetupWizardResTarget
+
+PRODUCT_PACKAGES += \
     EvolutionFrameworksResSpacewar \
     EvolutionSettingsProviderResSpacewar \
     EvolutionSettingsResSpacewar \
