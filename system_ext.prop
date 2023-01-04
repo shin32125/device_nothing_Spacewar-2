@@ -56,6 +56,9 @@ persist.data.df.agg.dl_size=4096
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# NFC
+ro.nfc.port=I2C
+
 # Radio
 persist.vendor.radio.atfwd.start=true
 ril.subscription.types=NV,RUIM

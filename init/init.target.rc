@@ -96,6 +96,12 @@ on post-fs-data
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
 
+on post-fs-data
+    chmod 0660 /dev/pn553
+    chown nfc nfc /dev/pn553
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+
 on early-boot
     start vendor.sensors
     verity_update_state
