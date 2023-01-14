@@ -21,6 +21,9 @@ ro.vendor.dirac.config=512
 ro.vendor.dirac.gef.mode=global
 ro.vendor.dirac.poolsize=3
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # DPM
 persist.vendor.dpm.feature=11
 
