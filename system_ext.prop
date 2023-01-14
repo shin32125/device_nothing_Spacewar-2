@@ -42,6 +42,9 @@ ro.bootloader.locked=0
 # HWUI
 debug.hwui.skia_atrace_enabled=false
 
+# IOP
+vendor.iop.enable_uxe=1
+
 # Media
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
