@@ -30,6 +30,9 @@ persist.vendor.dpm.feature=11
 # Fingerprint
 ro.bootloader.locked=0
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
