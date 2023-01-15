@@ -10,9 +10,6 @@
 /data/vendor/goodix/gf_data(/.*)?                                                             u:object_r:vendor_goodix_data_file:s0
 /dev/goodix_fp                                                                                u:object_r:fingerprint_device:s0
 
-# Init
-/(vendor|system/vendor)/bin/init\.nt\.post_boot\.sh         u:object_r:vendor_qti_init_shell_exec:s0
-
 # LEDs
 /sys/devices/platform/soc/984000.i2c/i2c-0/0-0020/leds/aw210xx_led(/.*)?                          u:object_r:sysfs_leds:s0
 
