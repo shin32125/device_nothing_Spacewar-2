@@ -329,7 +329,6 @@ PRODUCT_PACKAGES += \
 
 # Overlay LAHAINA
 PRODUCT_PACKAGES += \
-    LAHAINAFrameworks \
     LAHAINAWifi
 
 # Overlay NT
@@ -343,7 +342,6 @@ PRODUCT_PACKAGES += \
 
 # Overlay QSSI
 PRODUCT_PACKAGES += \
-    QSSIFrameworks \
     QSSISystemUI \
     QSSITelephony \
     QSSIWifi
