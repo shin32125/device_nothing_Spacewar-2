@@ -472,11 +472,13 @@ vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/libSonyIMX471RmscLibrary.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
+system/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_night_video.so
+system/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_singlecam_bokeh.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
@@ -496,6 +498,7 @@ vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdepthcomputation.so
+vendor/lib64/libeepromcutter.so
 vendor/lib64/libhdr_stub.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
@@ -520,6 +523,7 @@ vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
 vendor/lib64/libos.so
+vendor/lib64/libPlaneSegmentationWrapper.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libremosaic_wrapper.so
