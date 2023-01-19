@@ -92,6 +92,8 @@ on late-fs
     mount_all --late
 
 on post-fs-data
+    restorecon_recursive /mnt/vendor/persist
+    mkdir /mnt/vendor/persist/camera 0777 cameraserver cameraserver
     mkdir /vendor/data/tombstones 0771 system system
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
