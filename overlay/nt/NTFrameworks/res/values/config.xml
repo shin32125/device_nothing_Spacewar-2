@@ -300,7 +300,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.04</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.03</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -409,7 +409,8 @@
     config_screenBrightnessBacklight. --> 
     <integer-array name="config_screenBrightnessBacklight">
         <item>1</item>
-        <item>3515</item>
+        <item>128</item>
+        <item>255</item>
     </integer-array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
@@ -420,6 +421,7 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0</item>
+        <item>250.0</item>
         <item>500.0</item>
     </array>
 
