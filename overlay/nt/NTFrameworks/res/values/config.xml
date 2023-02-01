@@ -744,6 +744,11 @@
      SMD. -->
     <bool name="config_autoPowerModePreferWristTilt">true</bool>
 
-     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-     <bool name="config_dozePulsePickup">true</bool>
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
+
+    <!-- When true, indicates that the vendor's IMS implementation requires a workaround when
+     sending a request to enable or disable the camera while the video session is also
+     paused. -->
+    <bool name="config_useVideoPauseWorkaround">true</bool>
 </resources>
