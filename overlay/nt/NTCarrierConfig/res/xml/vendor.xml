@@ -48,6 +48,8 @@
         <boolean name="disable_nr_smooth_in_call_bool" value="true" />
         <boolean name="carrier_change_to_auto_mode_bool" value="false" />
         <boolean name="default_nr_smooth_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
    </carrier_config>
    <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -3897,5 +3899,10 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1"> 
             <item value="2" /> 
         </int-array>
+    </carrier_config>
+    <!-- PA: Do not allow VoLTE on TIM Brazil -->
+    <carrier_config mcc="724" mnc="02,03,04">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
     </carrier_config>
 </carrier_config_list>
