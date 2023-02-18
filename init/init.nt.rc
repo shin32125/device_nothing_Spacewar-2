@@ -52,7 +52,7 @@ on boot
 
     # Display
     chown system system /sys/class/drm/sde-conn-1-DSI-1/panel_id
-    chmod 0666 /sys/class/drm/sde-conn-1-DSI-1/panel_id
+    chmod 0600 /sys/class/drm/sde-conn-1-DSI-1/panel_id
 	
     # Display (hbm)
     chown system system /sys/class/drm/sde-conn-1-DSI-1/hbm_mode
@@ -68,6 +68,14 @@ on boot
 	
     # Glyph LEDs
     chown system system /sys/class/leds/aw210xx_led/single_led_br
+	
+    # Hung_task
+    write /proc/sys/kernel/hung_task_timeout_secs 180
+    write /proc/sys/kernel/hung_task_warnings 10
+    write /proc/sys/kernel/hung_task_check_count 32768
+    write /proc/sys/kernel/hung_task_panic 1
+    write /proc/sys/kernel/hung_task_check_interval_secs 0
+    write /proc/sys/kernel/hung_task_selective_monitoring 0
 
 on post-fs-data
     # Goodix

@@ -61,6 +61,7 @@ bluetooth.hardware.power.rx_cur_ma=28
 bluetooth.hardware.power.tx_cur_ma=36
 bluetooth.profile.a2dp.source.enabled?=true
 bluetooth.profile.asha.central.enabled?=true
+bluetooth.profile.avrcp.controller.enabled?=true
 bluetooth.profile.avrcp.target.enabled?=true
 bluetooth.profile.bas.client.enabled?=true
 bluetooth.profile.gatt.enabled?=true
@@ -85,7 +86,7 @@ ro.bluetooth.a2dp_offload.supported=true
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
@@ -99,16 +100,12 @@ persist.vendor.dpmhalservice.enable=1
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
-vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.enable_async_powermode=1
 vendor.display.enable_optimize_refresh=1
 
 # DRM
 drm.service.enabled=true
-
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
@@ -117,7 +114,7 @@ vendor.gatekeeper.disable_spu=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.disable_client_composition_cache=1
-debug.sf.enable_gl_backpressure=1
+debug.sf.enable_egl_image_tracker=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
@@ -170,6 +167,7 @@ persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.enableadvancedscan=true
 ro.telephony.default_network=33,33
+ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
