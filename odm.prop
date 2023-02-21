@@ -11,6 +11,7 @@ vendor.audio.spkr_prot.tx.sampling_rate=48000
 ro.config.vc_call_vol_steps=7
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.qti.va_odm.support=1
+ro.config.media_vol_steps=100
 
 # Bluetooth
 persist.vendor.bluetooth.modem_nv_support=true
