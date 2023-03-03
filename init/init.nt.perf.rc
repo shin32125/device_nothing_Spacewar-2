@@ -27,6 +27,9 @@ on property:vendor.post_boot.parsed=1
     write /proc/irq/70/smp_affinity_list 2
     write /proc/irq/222/smp_affinity_list 1
 
+    # CPU Boost
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
+
     # CPUFreq
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
@@ -56,7 +59,6 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuctl/nnapi-hal/cpu.shares 20480
     write /dev/cpuctl/rt/cpu.shares 20480
     write /dev/cpuctl/top-app/cpu.shares 20480
-	
-	# Enable suspend to RAM
-    write /sys/power/mem_sleep "deep"
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
