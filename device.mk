@@ -146,6 +146,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
