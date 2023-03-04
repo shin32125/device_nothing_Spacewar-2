@@ -364,7 +364,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.3.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+	BoostFrameworkOverlay
 
 # PowerShare
 PRODUCT_PACKAGES += \
