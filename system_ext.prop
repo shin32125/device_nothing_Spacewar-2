@@ -57,6 +57,8 @@ debug.hwui.target_cpu_time_percent=20
 
 # LMK
 ro.config.low_ram=false
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
 
 # IOP
 vendor.iop.enable_uxe=1
