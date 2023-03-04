@@ -2,6 +2,9 @@
 dalvik.vm.dex2oat-filter=everything
 dalvik.vm.image-dex2oat-filter=everything
 
+# Brightness
+persist.sys.brightness.low.gamma=true
+
 # Camera
 camera.disable_zsl_mode=true
 
