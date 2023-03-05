@@ -540,14 +540,8 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 	
-$(call inherit-product-if-exists, vendor/qcom/common/system/perf/perf-vendor.mk)
+$(call inherit-product, vendor/qcom/common/system/perf/perf-vendor.mk)
 
-# Packages
-PRODUCT_PACKAGES += \
-    libavservices_minijail
-
-PRODUCT_SOONG_NAMESPACES += \
-    device/qcom/common
 	
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
