@@ -360,17 +360,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Perf
+PRODUCT_PACKAGES += \
+    libpsi.vendor \
+    libtflite
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power@1.3.vendor \
-    libpsi.vendor \
-    libtflite
+    android.hardware.power@1.3.vendor
 	
 # Perf Jars
 PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
+
+# IRQ balance config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # PowerShare
 PRODUCT_PACKAGES += \
