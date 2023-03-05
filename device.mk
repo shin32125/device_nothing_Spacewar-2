@@ -537,5 +537,7 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
+$(call inherit-product-if-exists, vendor/qcom/common/system/perf/perf-vendor.mk)
+	
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
