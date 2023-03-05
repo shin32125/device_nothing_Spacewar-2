@@ -1120,9 +1120,9 @@ vendor/etc/perf/targetresourceconfigs.xml|f929946e75637941b91b186024466fb1f1bdde
 # Perf (system) - from  LA.QSSI.13.0.r1-05300-qssi.0
 system/etc/permissions/com.qualcomm.qti.Performance.xml|7976f2fd46b8d07814310cc957a70f829bdd6932
 system/etc/permissions/com.qualcomm.qti.UxPerformance.xml|d92749d80c5d956db8251b08ea6388d3f107a32c
-system/framework/QPerformance.jar|c0f2334e5f071509f1151cc34793507cf395b1dc
-system/framework/QXPerformance.jar|23e5a2afbb6371106fbb1c7c609297fc486fc93e
-system/framework/UxPerformance.jar|14540e6c926a80f09f4ae972633cb740d5d9a75f
+-system/framework/QPerformance.jar|c0f2334e5f071509f1151cc34793507cf395b1dc
+-system/framework/QXPerformance.jar|23e5a2afbb6371106fbb1c7c609297fc486fc93e
+-system/framework/UxPerformance.jar|14540e6c926a80f09f4ae972633cb740d5d9a75f
 system_ext/app/PerformanceMode/PerformanceMode.apk|584042f8c751f49b2804dbdfeb35a53e491e2ace
 system_ext/app/PowerSaveMode/PowerSaveMode.apk|6a3d78292ed289e9178cf050ac3849a866b1097b
 system_ext/app/workloadclassifier/workloadclassifier.apk|64c1a88caf928b9032573dad01bae51758c19c2c
