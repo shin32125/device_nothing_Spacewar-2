@@ -320,7 +320,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution \
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     PixelSetupWizardResTarget
@@ -370,11 +371,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.3.vendor \
     BoostFrameworkOverlay
-	
-# Perf Jars
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+
 
 # IRQ balance config
 PRODUCT_COPY_FILES += \
@@ -536,7 +533,9 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
-    WfdCommon
+    WfdCommon \
+    QPerformance \
+    UxPerformance
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
