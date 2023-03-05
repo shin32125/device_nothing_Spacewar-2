@@ -534,8 +534,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon \
-    QPerformance \
-    UxPerformance
+    com.qualcomm.qti.Performance \
+    com.qualcomm.qti.UxPerformance
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
