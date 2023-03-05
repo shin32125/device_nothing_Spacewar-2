@@ -540,7 +540,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_SOONG_NAMESPACES += \
     device/qcom/common
 
-$(call inherit-product-if-exists, vendor/qcom/common/system/perf/perf-vendor.mk)
+$(call inherit-product, vendor/qcom/common/system/perf/perf-vendor.mk)
 	
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)

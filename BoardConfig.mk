@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/nothing/Spacewar
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # A/B
 AB_OTA_UPDATER := true
 
