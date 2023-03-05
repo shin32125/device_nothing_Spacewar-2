@@ -372,11 +372,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     BoostFrameworkOverlay
 
-
-# IRQ balance config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.nothing
