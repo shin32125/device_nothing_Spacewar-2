@@ -361,6 +361,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Perf
+PRODUCT_PACKAGES += \
+    libpsi.vendor \
+    libtflite
 
 # Power
 PRODUCT_PACKAGES += \
@@ -530,8 +534,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon \
+
+# Boot Jars
+PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
+
+# Packages
+PRODUCT_PACKAGES += \
+    libavservices_minijail
 
 PRODUCT_SOONG_NAMESPACES += \
     device/qcom/common
