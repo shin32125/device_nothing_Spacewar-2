@@ -362,6 +362,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# IRQ balance config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # Perf
 PRODUCT_PACKAGES += \
     libpsi.vendor \
