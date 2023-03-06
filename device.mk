@@ -327,10 +327,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-evolution
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution \
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
     PixelSetupWizardResTarget
