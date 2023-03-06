@@ -330,7 +330,8 @@ PRODUCT_PACKAGES += \
     EvolutionFrameworksResSpacewar \
     EvolutionSettingsProviderResSpacewar \
     EvolutionSettingsResSpacewar \
-    EvolutionSystemUIResSpacewar
+    EvolutionSystemUIResSpacewar \
+    BoostFrameworkOverlay
 
 # Overlay LAHAINA
 PRODUCT_PACKAGES += \
@@ -370,7 +371,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.3.vendor \
-    BoostFrameworkOverlay
 
 # PowerShare
 PRODUCT_PACKAGES += \
