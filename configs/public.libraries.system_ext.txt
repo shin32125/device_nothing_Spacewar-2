@@ -1,0 +1,2 @@
+libencoderjpeg_jni.so
+libcamxextension_algo.so
