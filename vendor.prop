@@ -103,6 +103,7 @@ vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_offline_rotator=1
 vendor.display.enable_async_powermode=1
 vendor.display.enable_optimize_refresh=1
+vendor.display.disable_rotator_downscale=1
 
 # DRM
 drm.service.enabled=true
